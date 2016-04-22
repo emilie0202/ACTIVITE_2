@@ -40,7 +40,7 @@ body
     color: black;
 }
 /*l'entete*/
-header
+header 1
 {
     display: flex;
     flex-direction: column;
