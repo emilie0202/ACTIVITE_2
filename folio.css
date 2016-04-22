@@ -1,0 +1,356 @@
+/*police personnalisées*/
+@font-face 
+{
+    font-family: 'silkscr';
+    src: url('police/slkscr/slkscr-webfont.eot');
+    src: url('police/slkscr/slkscr-webfont.eot?#iefix') format('embedded-opentype'),
+         url('police/slkscr/slkscr-webfont.woff2') format('woff2'),
+         url('police/slkscr/slkscr-webfont.woff') format('woff'),
+         url('police/slkscr/slkscr-webfont.ttf') format('truetype'),
+         url('police/slkscr/slkscr-webfont.svg#silkscreennormal') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face 
+{
+    font-family: 'exo';
+    src: url('police/exo/exo-medium-webfont.eot');
+    src: url('police/exo/exo-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('police/exo/exo-medium-webfont.woff2') format('woff2'),
+         url('police/exo/exo-medium-webfont.woff') format('woff'),
+         url('police/exo/exo-medium-webfont.ttf') format('truetype'),
+         url('police/exo/exo-medium-webfont.svg#silkscreennormal') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+/*elements de la page pour mobile*/
+#bloc_page
+{
+    width: auto;
+}
+/*corps de la page*/
+body
+{    
+    margin-top: 20px;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    background-color: #a7a7a7;
+    font-family: serif, Arial, sans-serif;
+    color: black;
+}
+/*l'entete*/
+header
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #4c4c4c;
+    color: white;
+    margin-bottom: 20px;
+}
+header h1
+{
+     margin-left: 20px;
+    font-weight: normal;
+    font-family: exo;
+    margin-bottom: 0;
+}
+header h3
+{
+     margin-left: 20px;
+     font-family: exo, serif;
+     background-color: #ea5e00;
+     width: 120px;
+     text-align: center;
+     line-height: 30px;
+     border: inset;
+
+}
+/*menu navigation disparaît en mode mobile*/
+nav
+{
+    display: none;
+}
+#titre h2
+{
+    background-color: white;
+    height: 50px;
+    margin-top: 0;
+    text-align: center;
+    font-size: 1em;
+    padding-top: 25px;
+    font-weight: normal;
+    font-family: silkscr;
+    text-shadow: 3px 3px 2px #64b08c;
+    margin-bottom: 0;
+    border-bottom: 3px solid #64b08c;
+    border-top: 3px solid #64b08c;
+}
+/*image disparait en mode mobile*/
+#banniere
+{
+    display: block;
+    width: 100%;
+    border-top: 3px solid #64b08c;
+}
+/*section competences*/
+#parcours
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 60px;
+}
+#competences
+{
+    padding-top: 20px;
+    padding-bottom: 70px;
+}
+#competences p
+{
+    text-align: center;
+    font-size: 1em;
+    font-family: exo;
+}
+#competences h2
+{
+    font-size: 1.2em;
+    text-align: center;
+    font-family: exo, serif;
+    color: white;
+}
+#competences a
+{
+    text-decoration: none;
+    color: #ea5e00;
+}
+aside
+{
+    border-left: 4px solid #ea5e00;
+    padding-left: 20px;
+}
+aside ul
+{
+    font-size: 1em;
+    margin-top: 30px;
+    font-family: exo, serif;
+}
+aside li
+{
+    font-size: 0.8em;
+    margin-top: 8px;
+}
+
+aside p
+{
+    color: white;
+
+}
+/*section projets*/
+#projets h2
+{
+
+    background-color: #4c4c4c;
+    font-family: exo, serif;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+}
+#site
+{
+    display: flex;
+    flex-direction: row-reverse; 
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+}
+figure
+{
+   text-align: center;
+   margin-left: 0;
+   margin-right: 0;
+
+}
+figure:hover
+{
+    background-color: #ea5e00;
+    border: 2px outset lightgray;
+}
+figcaption
+{
+    color: black;
+    font-family: exo, serif;
+    font-size: 0.9em;
+    margin-top: 10px;
+    margin-left: 40px;
+    width: 225px;
+}
+.tag
+{
+    margin-top: -75px;
+    text-align: center;
+ 
+}
+.tag img
+{
+     border: 2px outset lightgray;
+}
+#site h3
+{
+    text-align: center;
+    font-family: exo, serif;
+}
+#site h4
+{
+    color: white;
+}
+
+#location figure, #marchand figure, #flex figure, #activites figure
+ {
+    width: 300px;
+    height: 350px;
+    padding-top: 20px;
+    border-radius: 20px;
+ }
+/*pied de page*/
+footer
+{
+   margin-top: 60px;
+   display: inline-flex;
+   justify-content: space-around;
+   align-items: center;
+   width: 100%;
+   background-color: #4c4c4c; 
+   color: white;
+   font-family: serif;
+   font-size: 0.8em;
+   border-top: 3px dotted black;
+   margin-bottom: 0;
+}
+footer a
+{
+    background-color: #ea5e00;
+    text-decoration: none;
+    color: white;
+    border: outset;
+    padding: 5px;
+}
+footer a:hover
+{
+    border: inset;
+}
+footer img
+{
+    display: none;
+}
+
+
+/*mise en page à partir de 1280px */
+@media all and (min-width: 1280px)
+{  
+/*element principaux de la page*/
+#bloc_page
+{
+    width: 100%;
+
+}
+/*l'entête*/
+header
+{
+    height: 50px;
+    margin-bottom: 20px;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+   
+}
+header h1
+{
+   margin-top: 0; 
+   margin-left: 110px;
+}
+header h3
+{
+   line-height: 70px;
+   margin-left: 60px;
+}
+#accueil
+{
+    background-color: #ea5e00;
+}
+/*menu navigation*/
+nav
+{
+    display: block;
+}
+nav ul
+{
+
+    display: flex;
+    list-style-type: none;
+    margin-left: 130px;
+}
+nav li
+{
+    line-height: 50px;
+    margin-right: 70px;
+    font-family: exo, serif;
+}
+nav a
+{
+    color: white;
+    text-decoration: none;
+}
+/*menu au survol*/
+nav li:hover
+{
+    background-color: #ea5e00;
+    line-height: 50px;
+}
+
+#titre h2
+{
+   height: 70px;
+   font-size: 2em;
+}
+/*section competences*/
+#parcours
+{
+    flex-direction: row;
+}
+#competences h2
+{
+    font-size: 1.4em;
+}
+#competences p
+{
+    font-size: 1.2em;
+}
+aside ul
+{
+   font-size: 1.2em;
+}
+
+#site
+{
+    flex-direction: row-reverse;
+    margin-top: 40px;
+}
+/*pied de page*/
+footer
+{
+   line-height: 30px;
+   text-align: center;
+}
+footer img
+{
+    display: block;
+    position: relative;
+    bottom: 30px;
+}
+
+     }
+
+
+
