@@ -1,2 +1,2 @@
-Bonjour voici mon premier projet :
+Bonjour voici mon premier projet 
 PORTFOLIO
